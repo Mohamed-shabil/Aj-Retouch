@@ -39,8 +39,8 @@ function Testimonial() {
             <div className="w-full max-w-2xl flex justify-center">
                 <Carousel>
                     <CarouselContent>
-                        {testimonials.map((testimoni) => (
-                            <TestimonialCard testimoni={testimoni} />
+                        {testimonials.map((testimoni, i) => (
+                            <TestimonialCard testimoni={testimoni} key={i} />
                         ))}
                     </CarouselContent>
                     <CarouselPrevious />
