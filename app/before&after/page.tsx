@@ -20,8 +20,8 @@ const images = [
 function BeforeAndAfter() {
     return (
         <div className="container">
-            {images.map((image) => (
-                <ImageSlider image={image} />
+            {images.map((image, i) => (
+                <ImageSlider image={image} key={i} />
             ))}
         </div>
     );
